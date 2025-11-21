@@ -9,7 +9,6 @@ class Car:
         self._price = price
     
     def input_data(self):
-        """Метод для ввода данных"""
         try:
             self._model = input("Введите название модели: ")
             self._year = int(input("Введите год выпуска: "))
@@ -101,7 +100,6 @@ class Book:
             print("Ошибка ввода данных! Проверьте правильность введенных значений.")
     
     def display_data(self):
-        """Метод для вывода данных"""
         print(f"""
         === ИНФОРМАЦИЯ О КНИГЕ ===
         Название: {self._title}
@@ -165,7 +163,6 @@ class Stadium:
         self._capacity = capacity
     
     def input_data(self):
-        """Метод для ввода данных"""
         try:
             self._name = input("Введите название стадиона: ")
             self._opening_date = input("Введите дату открытия (дд.мм.гггг): ")
@@ -281,7 +278,6 @@ def demonstrate_classes():
     stadium1.display_data()
 
 def quick_demo():
-    """Быстрая демонстрация без ввода данных"""
     
     print("\n" + "=" * 60)
     print("БЫСТРАЯ ДЕМОНСТРАЦИЯ (без ввода данных)")
@@ -299,4 +295,5 @@ if __name__ == "__main__":
     
     demonstrate_classes()
     
+
     quick_demo()
